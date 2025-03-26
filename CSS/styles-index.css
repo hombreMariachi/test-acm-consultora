@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;700;900&display=swap');
+
+
+
+
+
+/*-------------------------------------Configuraciones generales----------------------------------------------*/
+a {
+    font-family: 'Roboto Slab', serif; /* Títulos con la fuente Roboto Slab */
+}
+
+p{
+    font-family: 'Roboto', sans-serif; /* Enlaces con la fuente Roboto */
+    font-size: 15px;
+}
+
+h3{
+    font-family: 'Roboto Slab', serif; /* Enlaces con la fuente Roboto */;
+    font-size: 27.5px;
+}
+
+
+li{
+    font-family:'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+h2.contact-heading {
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    color: #b3cc3d;
+}
+
+p.contact-info {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+
+/*-------------------------------------Primera parte de la página----------------------------------------------*/
+#espacio {
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    margin-left: 65px;
+}
+
+#compromiso {
+    font-family: 'Roboto Slab', serif;
+    color: #3c3c3b;
+}
+
+
+
+
+/*-------------------------------------Carrousel----------------------------------------------*/
+
+#carouselFather .carousel-inner {
+    display: block; /* Cambiar de flex a block para evitar cortes */
+    height: 450px; /* Mantener la altura */
+}
+
+#carouselFather .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center; /* Asegura que el contenido esté centrado */
+    position: absolute; /* Coloca las imágenes en una posición relativa */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0; /* Las imágenes son invisibles por defecto */
+    transition: opacity 1s ease-in-out; /* Transición suave */
+    z-index: -1; /* Las imágenes tienen un índice de capa para no superponerse */
+}
+
+#carouselFather .carousel-item.active {
+    opacity: 1; /* La imagen activa se vuelve visible */
+    z-index: 1; /* La imagen activa se coloca encima de las demás */
+}
+
+#carouselFather .carousel-item img {
+    max-width: 90%;  /* Asegura que la imagen ocupe como máximo el 90% del ancho del contenedor */
+    max-height: 200px;  /* Limita la altura máxima */
+    width: auto;
+    height: auto;
+    object-fit: contain; /* Mantiene la proporción sin deformar */
+}
+
+#carouselFather .carousel-item img#mercedes {
+    max-width: 500px; /* Ajusta el tamaño máximo de la imagen de Mercedes-Benz */
+    height: auto;     /* Mantiene la proporción */
+}
+
+#carouselFather .carousel-item img#scania {
+    max-width: 450px; /* Ajusta el tamaño máximo de la imagen de Scania */
+    height: auto;     /* Mantiene la proporción */
+}
+
+#carouselFather .carousel-item img#trento {
+    max-width: 450px; /* Ajusta el tamaño máximo de la imagen de Trento */
+    height: auto;     /* Mantiene la proporción */
+}
+#carouselFather .carousel-item img#farmacity {
+    max-width: 450px; /* Ajusta el tamaño máximo de la imagen de Trento */
+    height: auto;     /* Mantiene la proporción */
+}
+
+#carouselFather .carousel-item img#igarreta {
+    max-width: 450px; /* Ajusta el tamaño máximo de la imagen de Trento */
+    height: auto;     /* Mantiene la proporción */
+}
+
+#carouselFather .carousel-item img#tom {
+    max-width: 450px; /* Ajusta el tamaño máximo de la imagen de Trento */
+    height: auto;     /* Mantiene la proporción */
+}
+
+
+
+@media (max-width: 768px) {
+    #carouselFather .carousel-item img {
+        max-width: 200px; /* Reducir el tamaño de las imágenes en pantallas pequeñas */
+    }
+
+    #carouselFather .carousel-item img#mercedes {
+        max-width: 200px; /* Ajusta el tamaño máximo de la imagen de Mercedes-Benz */
+        height: auto;     /* Mantiene la proporción */
+    }
+    
+    #carouselFather .carousel-item img#scania {
+        max-width: 200px; /* Ajusta el tamaño máximo de la imagen de Scania */
+        height: auto;     /* Mantiene la proporción */
+    }
+    
+    #carouselFather .carousel-item img#trento {
+        max-width: 200px; /* Ajusta el tamaño máximo de la imagen de Trento */
+        height: auto;     /* Mantiene la proporción */
+    }
+    #carouselFather .carousel-item img#farmacity {
+        max-width: 200px; /* Ajusta el tamaño máximo de la imagen de Trento */
+        height: auto;     /* Mantiene la proporción */
+    }
+    
+    #carouselFather .carousel-item img#igarreta {
+        max-width: 200px; /* Ajusta el tamaño máximo de la imagen de Trento */
+        height: auto;     /* Mantiene la proporción */
+    }
+    
+    #carouselFather .carousel-item img#tom {
+        max-width: 200px; /* Ajusta el tamaño máximo de la imagen de Trento */
+        height: auto;     /* Mantiene la proporción */
+    }
+
+    h2.contact-heading {
+        font-size: 25px; /* Ajustar tamaño para tabletas */
+    }
+
+    p.contact-info {
+        font-size: 13px; /* Ajustar tamaño de párrafos */
+    }
+
+    h3 {
+        font-size: 24px; /* Ajustar tamaño de subtítulos */
+    }
+
+    li {
+        font-size: 13px; /* Ajustar tamaño de las listas */
+    }
+}
+
+@media (max-width: 576px) {
+    h2.contact-heading {
+        font-size: 20px; /* Reducir el tamaño del título */
+    }
+
+    p.contact-info {
+        font-size: 12px; /* Reducir el tamaño de los párrafos */
+    }
+
+    h3 {
+        font-size: 20px; /* Reducir el tamaño de los subtítulos */
+    }
+
+    li {
+        font-size: 12px; /* Reducir el tamaño de las listas */
+    }
+}

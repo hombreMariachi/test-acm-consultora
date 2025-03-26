@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test web ACM</title>
+
+    <!-- Bootstrap primero -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Tu CSS después para sobrescribir estilos -->
+    <link rel="stylesheet" href="CSS/styles-index.css">
+</head>
+
+
+<body>
+    <!-- cambio para probar-->
+    <div class="grid-container">
+        <!-- ---------------------------------------------------------Menú de navegación--------------------------------------------------------- -->
+
+        <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary" class="navbar bg-dark border-bottom border-body"
+            data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="imagenes/logo/logo-solo-ACM.png" alt="logoACM" height="25px" >
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/paginas-internas/sobre-nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/paginas-internas/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        </header>
+
+
+        <!-- ---------------------------------------------------------Presentación y logo--------------------------------------------------------- -->
+        <div class="container-fluid py-5">
+            <div class="row align-items-center">
+                <!-- Columna del logo y texto -->
+                <div class="col-md-6 d-flex flex-column align-items-center">
+                    <img src="imagenes/logo/Logo verde y negro.png" alt="Logo ACM" class="img-fluid w-75">
+                    <p class="text-center mt-3"  id="espacio">
+                        En cada espacio,<br>
+                        <span id="compromiso">    un compromiso.</span>
+                    </p>
+                </div>
+                <!-- Columna de la imagen -->
+                <div class="col-md-6">
+                    <img src="imagenes/imagenes-de-paginas/techo.jpg" alt="Hombres trabajando en la altura"
+                        class="img-fluid w-100" style="border-radius: 25px 0 0 25px;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Propósito -->
+        <div class="container-fluid py-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-sm-12 text-center">
+                    <img src="imagenes/elementos/chequeado.png" alt="una imagen de chequeado" width="75">
+                </div>
+                <div class="col-md-6 col-sm-12 text-center">
+                    <p>
+                        <span id="titulo-proposito">Dedicados al asesoramiento integral para tu industria</span><br>
+                        <span id="parrafo-proposito">Contamos con especialistas en seguridad e higiene, medio ambiente e
+                            <br>
+                            ingeniería. Tenemos más de 10 años de experiencia en el rubro.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ---------------------------------------------------------Imagen hombres trabajando en la altura--------------------------------------------------------- -->
+        <div class="container-fluid py-5">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="imagenes/imagenes-de-paginas/trabajo-altura.jpg" alt="Hombres trabajando en la altura"
+                        class="img-fluid w-100">
+                </div>
+            </div>
+        </div>
+
+        <!-- ---------------------------------------------------------Servicios--------------------------------------------------------- -->
+        <div class="container py-5">
+            <div class="row g-4">
+                <!-- Seguridad & Higiene -->
+                <div class="col-md-4">
+                    <div class="card text-black text-center p-4" style="background-color: #828282; height: 400px;">
+                        <img src="imagenes/elementos/casco.png" alt="casco de seguridad ilustracion" class="mx-auto"
+                            width="80">
+                        <h3 class="mt-3">Seguridad e Higiene</h3>
+                        <ul class="list-unstyled text-start mx-auto w-75">
+                            <li>Auditorías de diagnóstico</li>
+                            <li>Estudios de iluminación y ruido laboral</li>
+                            <li>Aparatos sometidos a presión</li>
+                            <li>Plan de capacitación</li>
+                            <li>Análisis de riesgo</li>
+                            <li>Planos de evacuación y electromecánicos</li>
+                            <li>Estudios de ergonomía, laboratorio y puestos de trabajo</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Habilitaciones y Legales -->
+                <div class="col-md-4">
+                    <div class="card text-dark text-center p-4" style="background-color: #b3cc3d;height: 400px;">
+                        <img src="imagenes/elementos/mail-negro.png" alt="sobre negro. Ilustracion" class="mx-auto"
+                            width="80">
+                        <h3 class="mt-3">Habilitaciones y Legales</h3>
+                        <ul class="list-unstyled text-start mx-auto w-75">
+                            <li>Habilitaciones industriales</li>
+                            <li>Certificado de aptitud ambiental</li>
+                            <li>Inspecciones legales (ART, SRT, Ministerio)</li>
+                            <li>Pericias judiciales</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Medio Ambiente -->
+                <div class="col-md-4">
+                    <div class="card text-dark text-center p-4" style="background-color: #e3e5c2;height: 400px;">
+                        <img src="imagenes/elementos/cartel exclamacion.png" alt="ilustracion de cartel exclamacion"
+                            class="mx-auto" width="80">
+                        <h3 class="mt-3">Medio Ambiente</h3>
+                        <ul class="list-unstyled text-start mx-auto w-75">
+                            <li>Categorización industrial</li>
+                            <li>Estudio de impacto ambiental</li>
+                            <li>DDJJ de residuos</li>
+                            <li>DDJJ de efluentes líquidas y gaseosas</li>
+                            <li>Auditoría de cumplimiento legal</li>
+                            <li>Auditoría de control de matriz legal</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ---------------------------------------------------------Imagen empresariales--------------------------------------------------------- -->
+        <div class="container-fluid py-5">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="imagenes/imagenes-de-paginas/edificios-empresariales.jpg" alt="edificios empresariales"
+                        class="img-fluid w-100">
+                </div>
+            </div>
+        </div>
+
+        <!-- ---------------------------------------------------------Sección carrousel nuestros clientes--------------------------------------------------------- -->
+
+        <!-- Sección Nuestros Clientes -->
+
+        <div class="container-fluid py-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-sm-12 text-center">
+                    <img src="imagenes/elementos/manos estrechadas.png" alt="una imagen de manos estrechandose" width="75">
+                </div>
+                <div class="col-md-6 col-sm-12 text-center">
+                    <h2 class="fw-bold">Nuestros clientes</h2>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <!--  ------------------------------------------CARROUSEL------------------------------------------ -->
+
+
+        <div id="carouselFather" class="carousel slide carousel-fade" data-bs-ride="carousel"
+            data-bs-interval="1500">
+            <div class="carousel-inner text-center" style="background-color: #e3e5c2; height: 300px;">
+
+                <div class="carousel-item active">
+                    <img src="imagenes/clientes/Emiva.png" class=" d-block rounded "
+                        alt="Imagen cliente" id="emiva">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/clientes/Farmacity-Marca.png" class=" d-block rounded "
+                        alt="Imagen cliente" id="farmacity">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/clientes/igarreta.png" class=" d-block rounded "
+                        alt="Imagen cliente" id="igarreta">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/clientes/logo-tom.png" class="d-block rounded "
+                        alt="Imagen cliente" id="tom">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/clientes/Mercedes-Benz.png" class=" d-block rounded"
+                        alt="Imagen cliente" id="mercedes">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/clientes/scania.png" class="d-block rounded "
+                        alt="Imagen cliente" id="scania">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/clientes/serquim.png" class=" d-block rounded "
+                        alt="Imagen cliente">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/clientes/Trento.png" class=" d-block rounded "
+                        alt="Imagen cliente" id="trento">
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    </div>
+
+    <!-- Sección con la segunda frase y la imagen adaptada a Bootstrap -->
+    <div id="segunda-frase" class="container-fluid py-5" style="background-color: #f5f5ef;">
+        <div class="row justify-content-evenly align-items-center">
+            <div class="col-md-6 col-sm-12 text-center">
+                <p class="fs-4 fw-bold" style="font-family: 'Roboto Slab', serif;">En cada espacio, <br><span
+                        id="un-proposito" style="color: #3c3c3b;">un propósito.</span></p>
+            </div>
+            <div class="col-md-6 col-sm-12 text-center">
+                <img src="imagenes/elementos/ojo.png" alt="imagen de un ojo"
+                    style="width: 95px; height: auto; flex-shrink: 0;">
+            </div>
+        </div>
+    </div>
+
+    <section id="contact" class="container-fluid"
+    style="padding-left: 50px; height: 460px; background-image: url('/imagenes/contacto/tecladonegro2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <div class="row h-100">
+        <!-- Parte Izquierda (Información de contacto) -->
+        <div id="contacto-parte-izquierda" class="col-md-6 d-flex flex-column justify-content-evenly text-white">
+            <h2 class="contact-heading">Contactanos:</h2>
+            <p class="contact-info">11-2455-8946</p>
+            <p class="contact-info">lorem@gmail.com</p>
+        </div>
+
+        <!-- Parte Derecha (Logo) -->
+        <div id="contacto-parte-derecha" class="col-md-6 d-flex justify-content-end align-items-end"
+            style="padding-right: 50px;">
+            <img src="imagenes/logo/Logo verde y negro.png" alt="Imagen ACM logo verde y gris"
+                style="width: 350px;">
+        </div>
+    </div>
+</section>
+
+
+
+    </main>
+
+    <footer class="bg-dark text-center text-white py-3">
+        <div class="container d-flex justify-content-center">
+
+            <!-- Iconos de redes sociales -->
+            <div id="imagenes-footer" class="d-flex justify-content-evenly align-items-center">
+                <img src="imagenes/redes sociales/instagram.webp" alt="Logo de instagram" class="img-fluid"
+                    style="width: 50px;">
+                <img src="imagenes/redes sociales/facebook.webp" alt="Logo de facebook" class="img-fluid"
+                    style="width: 32px;">
+                <img src="imagenes/redes sociales/linkedin.webp" alt="Logo linkedin" class="img-fluid"
+                    style="width: 45px;">
+            </div>
+        </div>
+
+        <!-- Texto -->
+        <p class="mb-0" style="color: #b3cc3d;">2025 ACM. Todos los derechos reservados.</p>
+    </footer>
+
+
+    <!-- 
+    <button id="btn-arriba">⬆ Ir arriba</button>*/
+-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -52,6 +52,30 @@ p.contact-info {
     color: #3c3c3b;
 }
 
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px); /* Comienza desplazado hacia abajo */
+    animation: fadeInAnimation 1.5s ease-out forwards;
+}
+
+/* Definir animación */
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efecto hover para hacer zoom suave */
+img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
 
 
 
@@ -120,6 +144,42 @@ p.contact-info {
     height: auto;     /* Mantiene la proporción */
 }
 
+
+#whatssapp {
+    width: 45px;  /* Ajusta el ancho */
+    height: auto; /* Mantiene la proporción */
+}
+
+#gmail{
+    width: 30px;  /* Ajusta el ancho */
+    height: auto; /* Mantiene la proporción */
+}
+
+#contacto-parte-izquierda {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre elementos */
+    font-weight: bold;
+}
+
+#parte-whatssapp, #parte-mail {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio entre la imagen y el texto */
+}
+
+#whatssapp, #gmail {
+    width: 30px;  /* Ajusta el tamaño de los íconos */
+    height: auto;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .card {
+        min-height: 650px; /* Aumenta la altura para evitar el desbordamiento */
+    }
+}
 
 
 @media (max-width: 768px) {

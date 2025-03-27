@@ -38,6 +38,14 @@ p.contact-info {
 }
 
 
+/* Efecto hover para hacer zoom suave */
+img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
 /*-------------------------------------Primera parte de la página----------------------------------------------*/
 #espacio {
     font-family: 'Roboto Slab', serif;
@@ -50,6 +58,13 @@ p.contact-info {
 #compromiso {
     font-family: 'Roboto Slab', serif;
     color: #3c3c3b;
+}
+
+.imagen-presentacion{
+    margin-top: 20px;
+
+    border-radius: 25px;
+    max-width: 625px;
 }
 
 .fade-in {
@@ -69,15 +84,26 @@ p.contact-info {
         transform: translateY(0);
     }
 }
+/*-------------------------------------Proposito----------------------------------------------*/
 
-/* Efecto hover para hacer zoom suave */
-img:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
+.parrafo-proposito{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+/*-------------------------------------Imagen hombres subiendo escalera----------------------------------------------*/
+
+.hombres-subiendo-escalera{
+    max-width: 1250px;
+    border-radius: 25px;
 }
 
 
-
+/*-------------------------------------Imagen edificios----------------------------------------------*/
+.edificios-empresariales{
+    max-width: 1275px;
+    border-radius: 25px;
+}
 
 /*-------------------------------------Carrousel----------------------------------------------*/
 
